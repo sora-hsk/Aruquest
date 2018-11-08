@@ -10,12 +10,15 @@
         android:id="@+id/mapFragment"
         android:name="jp.ac.uejobi.aruquest.MapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="52dp" />
+        android:layout_height="match_parent" />
 
     <FrameLayout
         android:id="@+id/messageFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/commandFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></FrameLayout>
 

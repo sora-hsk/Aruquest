@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <view
-        android:id="@+id/view"
+        android:id="@+id/viewMap"
         class="jp.ac.uejobi.aruquest.DrawMap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -19,6 +19,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:scaleType="matrix"/>
+
+    <Button
+        android:id="@+id/commandButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="コマンド"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
 <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"

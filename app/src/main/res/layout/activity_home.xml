@@ -1,21 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
     <FrameLayout
-        android:id="@+id/mainFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="2"></FrameLayout>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <fragment
-        android:id="@+id/ListFragment"
-        android:name="jp.ac.uejobi.aruquest.ListFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="8"></fragment>
+            <FrameLayout
+                android:id="@+id/mainFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></FrameLayout>
 
+            <fragment
+                android:id="@+id/ListFragment"
+                android:name="jp.ac.uejobi.aruquest.ListFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="9">
+            </fragment>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/subFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="9">
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgAlchemy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="matrix"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
 </LinearLayout>
